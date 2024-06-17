@@ -1,4 +1,4 @@
 Django
 uwsgi
-PyMySQL
 djangorestframework
+mysqlclient
