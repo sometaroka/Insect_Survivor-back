@@ -1,10 +1,11 @@
-mariadb/*
+docker/mariadb/*
 src/app/__pycache__/*
 src/app/migrations/*
 src/app/static/*
 src/app/media/*
-static/admin/*
-static/rest_framework/*
 src/api/__pycache__/*
 src/api/migrations/*
+static/admin/*
+static/rest_framework/*
+
 

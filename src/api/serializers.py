@@ -1,8 +1,7 @@
 from rest_framework import serializers
-from .models import TestData 
+from .models import Word
 
-class TestDataSerializer(serializers.ModelSerializer):
+class WordSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TestData
-        fields = '__all__'
-# Compare this snippet from src/api/serializers.py:
+        model = Word
+        fields = ['word']
