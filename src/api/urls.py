@@ -1,10 +1,16 @@
-from django.urls import path, include
-from rest_framework import routers
-from . import views
+# from django.urls import path, include
+# from rest_framework import routers
+# from . import views
 
-router = routers.DefaultRouter()
-router.register('testdata', views.TestDataViewSet)
+# router = routers.DefaultRouter()
+# router.register('testdata', views.TestDataViewSet)
+
+# urlpatterns = [
+#     path('', include(router.urls))
+# ]
+from django.urls import path
+from .views import WordListCreate
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('words/', WordListCreate.as_view(), name='word-list-create'),
 ]
